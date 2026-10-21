@@ -1,0 +1,15 @@
+ma\ensaf\pharmacie\repository\FournisseurRepository.class
+ma\ensaf\pharmacie\repository\TagRepository.class
+ma\ensaf\pharmacie\model\Fournisseur.class
+ma\ensaf\pharmacie\model\Tag.class
+ma\ensaf\pharmacie\model\Categorie.class
+ma\ensaf\pharmacie\repository\ProduitRepository.class
+ma\ensaf\pharmacie\controller\rest\ProduitRestController.class
+ma\ensaf\pharmacie\controller\rest\FournisseurRestController.class
+ma\ensaf\pharmacie\controller\web\ProduitWebController.class
+ma\ensaf\pharmacie\PharmacieApplication.class
+ma\ensaf\pharmacie\controller\rest\TagRestController.class
+ma\ensaf\pharmacie\model\DetailProduit.class
+ma\ensaf\pharmacie\repository\DetailProduitRepository.class
+ma\ensaf\pharmacie\model\Produit.class
+ma\ensaf\pharmacie\repository\CategorieRepository.class
