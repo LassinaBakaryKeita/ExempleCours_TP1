@@ -37,4 +37,4 @@ Ce dossier contient l'application complète développée pour le **TP N°1** :
 
 Chaque dossier dispose de son propre fichier `README.md` contenant l'explication pas à pas et l'intégration de toutes les captures d'écran de test :
 * Pour voir le rapport détaillé de l'exercice du cours : consultez [`springboot-rest-demo/README.md`](./springboot-rest-demo/README.md)
-* Pour voir le rapport détaillé du TP1 Pharmacie : consultez [`stock de pharmacie TP1/README.md`](./stock%20de%20pharmacie%20TP1/README.md)
+* Pour voir le rapport détaillé du TP1 Pharmacie : consultez [`tp1-pharmacie-stock/README.md`](./stock%20de%20pharmacie%20TP1/README.md)
