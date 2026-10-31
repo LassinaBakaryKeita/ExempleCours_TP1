@@ -10,6 +10,7 @@ ma\ensaf\pharmacie\controller\web\ProduitWebController.class
 ma\ensaf\pharmacie\PharmacieApplication.class
 ma\ensaf\pharmacie\controller\rest\TagRestController.class
 ma\ensaf\pharmacie\model\DetailProduit.class
+ma\ensaf\pharmacie\controller\rest\CategorieRestController.class
 ma\ensaf\pharmacie\repository\DetailProduitRepository.class
 ma\ensaf\pharmacie\model\Produit.class
 ma\ensaf\pharmacie\repository\CategorieRepository.class

@@ -1,9 +1,25 @@
-import ma.ensaf.pharmacie.model.*;
-import ma.ensaf.pharmacie.repository.*;
-import org.springframework.beans.factory.annotation.Autowired;
+package ma.ensaf.pharmacie.controller.rest;
+
+import ma.ensaf.pharmacie.model.Categorie;
+import ma.ensaf.pharmacie.model.DetailProduit;
+import ma.ensaf.pharmacie.model.Fournisseur;
+import ma.ensaf.pharmacie.model.Produit;
+import ma.ensaf.pharmacie.model.Tag;
+import ma.ensaf.pharmacie.repository.CategorieRepository;
+import ma.ensaf.pharmacie.repository.FournisseurRepository;
+import ma.ensaf.pharmacie.repository.ProduitRepository;
+import ma.ensaf.pharmacie.repository.TagRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,22 +27,23 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/produits")
 @CrossOrigin(origins = "*")
+@SuppressWarnings("null")
 public class ProduitRestController {
 
-    @Autowired
-    private ProduitRepository produitRepository;
+    private final ProduitRepository produitRepository;
+    private final CategorieRepository categorieRepository;
+    private final FournisseurRepository fournisseurRepository;
+    private final TagRepository tagRepository;
 
-    @Autowired
-    private CategorieRepository categorieRepository;
-
-    @Autowired
-    private FournisseurRepository fournisseurRepository;
-
-    @Autowired
-    private TagRepository tagRepository;
-
-    @Autowired
-    private DetailProduitRepository detailProduitRepository;
+    public ProduitRestController(ProduitRepository produitRepository,
+                                 CategorieRepository categorieRepository,
+                                 FournisseurRepository fournisseurRepository,
+                                 TagRepository tagRepository) {
+        this.produitRepository = produitRepository;
+        this.categorieRepository = categorieRepository;
+        this.fournisseurRepository = fournisseurRepository;
+        this.tagRepository = tagRepository;
+    }
 
     // GET /api/produits -> lister les produits
     @GetMapping
